@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1276.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResturantHomeController">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="839.0" layoutX="368.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%204.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="resturant_name_txt" fill="#79a42b" layoutX="687.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Hello,RestruantName!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="884.0" layoutY="422.0">
+         <image>
+            <Image url="@../Images/Layer%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="51.0" layoutX="623.0" layoutY="412.0">
+         <image>
+            <Image url="@../Images/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="231.0" fitWidth="241.0" layoutX="1058.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="328.0" fitWidth="252.0" layoutX="286.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Spaggati.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="286.0" style="-fx-background-color: #05071F;" stylesheets="@../css/style1.css">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Home" prefHeight="42.0" prefWidth="259.0" text="Home">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#WaitingOrders" prefHeight="42.0" prefWidth="259.0" text="Waiting orders">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0">
+                     <image>
+                        <Image url="@../Images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#viewOrderList" prefHeight="42.0" prefWidth="259.0" text="Orders in progress">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0">
+                     <image>
+                        <Image url="@../Images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="menu1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#menuSettings" prefHeight="42.0" prefWidth="259.0" text="Menu Settings">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/kissclipart-testing-icon-png-clipart-software-testing-computer-51bced1cfa2da30a.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#logOut" prefHeight="42.0" prefWidth="259.0" text="Sign Out">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../Images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button contentDisplay="TOP" layoutX="413.0" layoutY="365.0" mnemonicParsing="false" onAction="#menuSettings" prefHeight="200.0" prefWidth="230.0" style="-fx-background-color: #353f4c; -fx-background-radius: 100;" text="Menu&#10;Settings" textAlignment="CENTER" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="51.0">
+               <image>
+                  <Image url="@../Images/2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="921.0" layoutY="369.0" mnemonicParsing="false" onAction="#viewOrderList" prefHeight="200.0" prefWidth="230.0" style="-fx-background-color: #353f4c; -fx-background-radius: 100;" text="Orders in progress" textAlignment="CENTER" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="71.0">
+               <image>
+                  <Image url="@../Images/Layer%203.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="667.0" layoutY="366.0" mnemonicParsing="false" onAction="#WaitingOrders" prefHeight="200.0" prefWidth="230.0" style="-fx-background-color: #353f4c; -fx-background-radius: 100;" text="Waiting Orders" textAlignment="CENTER" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="62.0">
+               <image>
+                  <Image url="@../Images/Layer%203.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="278.0" fitWidth="200.0" layoutX="549.0" layoutY="330.0">
+         <image>
+            <Image url="@../Images/cutter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="278.0" fitWidth="200.0" layoutX="814.0" layoutY="326.0">
+         <image>
+            <Image url="@../Images/cutter.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="455.0" layoutY="39.0" prefHeight="24.0" prefWidth="67.0" stylesheets="@../../../CSS/CSS/src/application/Text1.css" text="BiteMe">
+         <font>
+            <Font name="System Bold" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="43.0" stylesheets="@../../../CSS/CSS/src/application/Text1.css" text="-&gt;" />
+      <Label layoutX="515.0" layoutY="43.0" stylesheets="@../../../CSS/CSS/src/application/Text.css" text="Restruant Home" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

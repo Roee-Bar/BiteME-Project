@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="1111.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerConnectionController">
+   <children>
+      <ImageView fitHeight="824.0" fitWidth="1131.0" layoutX="9.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%202.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Connect_btn" layoutX="59.0" layoutY="536.0" mnemonicParsing="false" onAction="#connect" prefHeight="66.0" prefWidth="177.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Connect" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="disconnect_btn" layoutX="68.0" layoutY="617.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="66.0" prefWidth="158.0" style="-fx-background-color: #353f4c; -fx-background-radius: 100;" text="Disconnect" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="435.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%201.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="86.0" layoutY="137.0" text="Server Configuration" textFill="#353f4c">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ip_txt" disable="true" layoutX="175.0" layoutY="207.0" prefHeight="10.0" prefWidth="208.0" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="37.0" layoutY="207.0" text="Server IP:" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="255.0" text="Port:" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="port_txt" layoutX="175.0" layoutY="255.0" prefHeight="10.0" prefWidth="208.0" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="34.0" layoutY="308.0" text="DB Name:" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DBName_txt" layoutX="175.0" layoutY="308.0" prefHeight="10.0" prefWidth="208.0" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="34.0" layoutY="364.0" text="DB User:" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DBUser_txt" layoutX="175.0" layoutY="364.0" prefHeight="10.0" prefWidth="208.0" style="-fx-background-radius: 100;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="34.0" layoutY="418.0" text="DB Password:" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Password_txt" layoutX="179.0" layoutY="418.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-radius: 100;" />
+      <Button layoutX="77.0" layoutY="695.0" mnemonicParsing="false" onAction="#close" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #353f4c; -fx-background-radius: 50;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="user_tbl" layoutX="463.0" layoutY="137.0" prefHeight="624.0" prefWidth="621.0" style="-fx-border-color: #000000;" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="ip" prefWidth="202.0" style="-fx-background-radius: 100;" text="IP" />
+            <TableColumn fx:id="host" prefWidth="240.0" style="-fx-background-radius: 100;" text="Host" />
+            <TableColumn fx:id="status" prefWidth="183.0" style="-fx-background-radius: 100;" text="Status" />
+         </columns>
+      </TableView>
+      <Label fx:id="lable_txt" alignment="CENTER" layoutX="22.0" layoutY="478.0" prefHeight="30.0" prefWidth="432.0" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progress" layoutX="251.0" layoutY="622.0" prefWidth="200.0" progress="0.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" />
+      <Button fx:id="importButton" layoutX="281.0" layoutY="552.0" mnemonicParsing="false" onAction="#importDB" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Import" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="data_txt" layoutX="257.0" layoutY="618.0" text="Data Base Imported" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

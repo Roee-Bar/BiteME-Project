@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="616.0" style="-fx-background-color: #353f4c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UploadQuarterlyReportController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="616.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sub.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="692.0" fitWidth="616.0">
+         <image>
+            <Image url="@../Images/A.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="80.0" layoutY="609.0" mnemonicParsing="false" onAction="#returnToPage" prefHeight="41.0" prefWidth="466.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow>
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#79a42b" layoutX="14.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Quarterly Reports">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="393.0" layoutY="283.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="41.0" prefWidth="130.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Choose File" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow>
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="path_txtfiled" layoutX="181.0" layoutY="288.0" style="-fx-background-radius: 100;" />
+      <Text fill="#79a42b" layoutX="89.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Path:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="sendFile_btn" layoutX="393.0" layoutY="365.0" mnemonicParsing="false" onAction="#sendFile" prefHeight="41.0" prefWidth="130.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Send To CEO" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow>
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="year_txtfield" layoutX="181.0" layoutY="331.0" prefHeight="31.0" prefWidth="58.0" style="-fx-background-radius: 100;" />
+      <Text fx:id="year_txt" fill="#79a42b" layoutX="89.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Year:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="quarter_txt" fill="#79a42b" layoutX="89.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Quarter:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="quarter_combo" layoutX="181.0" layoutY="373.0" prefWidth="150.0" style="-fx-background-radius: 100;" />
+      <ImageView fitHeight="41.0" fitWidth="329.0" layoutX="208.0" layoutY="342.0" rotate="90.0">
+         <image>
+            <Image url="@../Images/pngwing.com%20(5).png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="174.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="174.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="173.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1276.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PaymentMethodController">
+   <children>
+      <ImageView fx:id="Visa" fitHeight="385.0" fitWidth="329.0" layoutX="876.0" layoutY="312.0">
+         <image>
+            <Image url="@../Images/Paymen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image1" fitHeight="639.0" fitWidth="839.0" layoutX="430.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%204.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackButton" layoutX="304.0" layoutY="666.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="41.0" prefWidth="130.0" stylesheets="@../css/ButtonStyle1.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fx:id="image2" fitHeight="231.0" fitWidth="241.0" layoutX="1058.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image3" fitHeight="328.0" fitWidth="252.0" layoutX="286.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Spaggati.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="deleiveryservicetxt" fill="#79a42b" layoutX="507.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Deleivery Service:" wrappingWidth="146.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="enterAdresstxt" fill="#79a42b" layoutX="941.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Enter address Please:" wrappingWidth="166.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="streettxt" fill="#79a42b" layoutX="882.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street:" wrappingWidth="59.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="housenumbertxt" fill="#79a42b" layoutX="818.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House number:" wrappingWidth="118.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="citytxt" fill="#79a42b" layoutX="901.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" wrappingWidth="35.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="247.0" fitWidth="200.0" layoutX="697.0" layoutY="368.0">
+         <image>
+            <Image url="@../Images/cutter.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Shadow" layoutX="507.0" layoutY="335.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="71.0" stylesheets="@../../../CSS/CSS/src/application/ButtonStyle1.css" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.03947368264198303" green="0.03947368264198303" red="0.03947368264198303" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="Shadow1" layoutX="586.0" layoutY="335.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="71.0" stylesheets="@../../../CSS/CSS/src/application/ButtonStyle1.css" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.03947368264198303" green="0.03947368264198303" red="0.03947368264198303" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+    <Button fx:id="payprivatebutton" layoutX="727.0" layoutY="608.0" mnemonicParsing="false" onAction="#payprivatebuttonAction" prefHeight="35.0" prefWidth="155.0" stylesheets="@../css/ButtonStyle.css" text="Private Account" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="takeawaybutton" layoutX="521.0" layoutY="419.0" mnemonicParsing="false" onAction="#takeawaybuttonAction" prefHeight="30.0" prefWidth="118.0" stylesheets="@../css/ButtonStyle1.css" text="Take-away" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect></Button>
+    <Button fx:id="deleiveryButton" cancelButton="true" layoutX="521.0" layoutY="519.0" mnemonicParsing="false" onAction="#deleiveryButtonAction" prefHeight="30.0" prefWidth="118.0" stylesheets="@../css/ButtonStyle1.css" text="Deleivery" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow height="0.0" radius="0.0" width="0.0">
+               <input>
+                  <DropShadow>
+                     <input>
+                        <BoxBlur height="0.0" iterations="0" width="196.38" />
+                     </input>
+                  </DropShadow>
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="paybussinessbutton" layoutX="702.0" layoutY="654.0" mnemonicParsing="false" onAction="#paybussinessbuttonAction" prefHeight="35.0" prefWidth="206.0" stylesheets="@../css/ButtonStyle.css" text="Bussiness Account" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="robotbutton" layoutX="521.0" layoutY="469.0" mnemonicParsing="false" onAction="#robotbuttonAction" prefHeight="30.0" prefWidth="118.0" stylesheets="@../css/ButtonStyle1.css" text="Robot" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Text fx:id="requesteddatetxt" fill="#79a42b" layoutX="493.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested order date:" textAlignment="CENTER" wrappingWidth="174.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="nowbutton" layoutX="507.0" layoutY="335.0" mnemonicParsing="false" onAction="#nowbuttonAction" prefHeight="38.0" prefWidth="71.0" stylesheets="@../css/ButtonStyle1.css" text="Now" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="otherbutton" layoutX="586.0" layoutY="335.0" mnemonicParsing="false" onAction="#otherbuttonAction" prefHeight="38.0" prefWidth="71.0" stylesheets="@../css/ButtonStyle1.css" text="Other" textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Text fx:id="Wallettxt" fill="#79a42b" layoutX="820.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bussiness Wallet:" wrappingWidth="130.5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txt3" fill="RED" layoutX="641.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="postage +25$" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="621.0" layoutY="401.0">
+         <image>
+            <Image url="@../Images/free.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="621.0" layoutY="451.0">
+         <image>
+            <Image url="@../Images/free.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pick1" fitHeight="42.0" fitWidth="44.0" layoutX="474.0" layoutY="415.0">
+         <image>
+            <Image url="@../Images/Pick.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pick3" fitHeight="42.0" fitWidth="44.0" layoutX="474.0" layoutY="514.0">
+         <image>
+            <Image url="@../Images/Pick.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pick2" fitHeight="42.0" fitWidth="44.0" layoutX="474.0" layoutY="464.0">
+         <image>
+            <Image url="@../Images/Pick.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="payprivatebutton1" layoutX="480.0" layoutY="579.0" mnemonicParsing="false" onAction="#payprivatebuttonAction" prefHeight="35.0" prefWidth="200.0" stylesheets="@../css/ButtonStyle.css" text="Private Account" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fx:id="Pick4" fitHeight="42.0" fitWidth="44.0" layoutX="474.0" layoutY="564.0">
+         <image>
+            <Image url="@../Images/Pick.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SharedDelButton" layoutX="521.0" layoutY="569.0" mnemonicParsing="false" onAction="#SharedDelButtonAction" prefHeight="39.0" prefWidth="155.0" stylesheets="@../css/ButtonStyle1.css" text="Shared-delivery " textAlignment="RIGHT" textFill="#343434">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fx:id="txt4" fill="RED" layoutX="676.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="postage +25$" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id="walletTxt" fill="#353f4c" layoutX="956.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Star" fill="#a32c2c" layoutX="669.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CityField" layoutX="949.0" layoutY="418.0" promptText="City" style="-fx-background-radius: 100;" />
+      <TextField fx:id="orderdateField" layoutX="683.0" layoutY="331.0" prefHeight="35.0" prefWidth="107.0" promptText="HH:MM" style="-fx-background-radius: 100;" />
+      <TextField fx:id="houseNumberField" layoutX="947.0" layoutY="506.0" promptText="House number" style="-fx-background-radius: 100;" />
+      <TextField fx:id="streetField" layoutX="949.0" layoutY="462.0" promptText="Street" style="-fx-background-radius: 100;" />
+      <Text fx:id="Discounttxt" fill="#05071f" layoutX="682.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="'Discount 10% on Price'">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="Star1" fill="#a32c2c" layoutX="937.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="Star11" fill="#a32c2c" layoutX="934.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="Star12" fill="#a32c2c" layoutX="934.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="SharedDelNumfield" layoutX="588.0" layoutY="617.0" prefHeight="35.0" prefWidth="130.0" promptText="ParticipantsNumber" style="-fx-background-radius: 100;" />
+      <Text fx:id="Star2" fill="#a32c2c" layoutX="573.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="CheckRefund" layoutX="802.0" layoutY="548.0" mnemonicParsing="false" onAction="#refundcheckbox" style="-fx-background-color: #79a42b;" textFill="#79a42b" />
+      <Text fx:id="Refundtxt" fill="#79a42b" layoutX="820.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refund:" wrappingWidth="64.5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Refundfield" fill="#353f4c" layoutX="879.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="286.0" style="-fx-background-color: #05071F;" stylesheets="@../css/style1.css">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Home" prefHeight="42.0" prefWidth="259.0" text="Home" textFill="#322d2d">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#MyOrder" prefHeight="42.0" prefWidth="259.0" text="My Order List">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="Logoutbtn1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="42.0" prefWidth="259.0" text="Sign Out">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="480.0" layoutY="46.0" prefHeight="0.0" prefWidth="67.0" stylesheets="@../css/Text1.css" text="BiteMe">
+         <font>
+            <Font name="System Bold" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="527.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="540.0" layoutY="46.0" prefHeight="0.0" prefWidth="106.0" stylesheets="@../css/Text1.css" text="Customer Home" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="647.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="659.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="Scan QR" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="719.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="733.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="Customer Details" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="848.0" layoutY="47.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="861.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="Choose Resturants" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="988.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="1001.0" layoutY="46.0" prefHeight="6.0" prefWidth="51.0" stylesheets="@../css/Text1.css" text="My Cart" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="1059.0" layoutY="46.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="1072.0" layoutY="46.0" prefHeight="7.0" prefWidth="118.0" stylesheets="@../css/Text.css" text="Payment Methods" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

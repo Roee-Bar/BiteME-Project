@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1276.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChooseResturantController">
+   <children>
+      <ImageView fx:id="Image1" fitHeight="639.0" fitWidth="839.0" layoutX="368.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%204.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TablelistID" layoutX="368.0" layoutY="325.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="277.0" prefWidth="839.0" style="-fx-border-color: #343434;" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="ResturanNameCol" minWidth="0.0" prefWidth="195.0" text="ResturantName" />
+            <TableColumn fx:id="StatusCol" prefWidth="199.0" text="Status" />
+            <TableColumn fx:id="Location" prefWidth="199.0" text="Location" />
+            <TableColumn fx:id="PhoneNumberCol" minWidth="0.0" prefWidth="239.0" text="PhoneNumber" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackButton" layoutX="303.0" layoutY="656.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="41.0" prefWidth="130.0" stylesheets="@../css/ButtonStyle1.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fill="#79a42b" layoutX="690.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Resturants List " textAlignment="CENTER" wrappingWidth="195.587890625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Image2" fitHeight="231.0" fitWidth="241.0" layoutX="1058.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Pizza.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image3" fitHeight="328.0" fitWidth="252.0" layoutX="286.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Spaggati.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image4" fitHeight="64.0" fitWidth="259.0" layoutX="675.0" layoutY="624.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/viewMenu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ViewMenuButton" layoutX="689.0" layoutY="636.0" mnemonicParsing="false" onAction="#ViewMenuButtonAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-radius: 100; -fx-background-color: #0000;" textFill="WHITE" />
+      <ImageView fx:id="Image5" fitHeight="74.0" fitWidth="55.0" layoutX="1126.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Cart.jpg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="MyCartButton" layoutX="1128.0" layoutY="122.0" mnemonicParsing="false" onAction="#MyCartAction" prefHeight="41.0" prefWidth="52.0" style="-fx-background-color: #0000;" />
+      <Text fx:id="ResturantFrom" fill="#79a42b" layoutX="738.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Choose Resturant From:-" textAlignment="CENTER" wrappingWidth="240.6190643310547">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="939.0" layoutY="287.0" prefHeight="40.0" prefWidth="259.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#MylocationAction" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #05071F; -fx-background-radius: 100;" text="My Location" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#AllLocationAction" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #05071F; -fx-background-radius: 100;" text="All Locations" textFill="WHITE" />
+        </buttons>
+      </ButtonBar>
+      <Text fx:id="selectone" fill="#ee0000" layoutX="948.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="*Select One:" wrappingWidth="240.6190643310547">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="286.0" style="-fx-background-color: #05071F;" stylesheets="@../css/style1.css">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Home" prefHeight="42.0" prefWidth="259.0" text="Home" textFill="#322d2d">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Logoutbtn" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="42.0" prefWidth="259.0" text="Sign Out">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="454.0" layoutY="43.0" prefHeight="0.0" prefWidth="67.0" stylesheets="@../css/Text1.css" text="BiteMe">
+         <font>
+            <Font name="System Bold" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="514.0" layoutY="43.0" prefHeight="0.0" prefWidth="106.0" stylesheets="@../css/Text1.css" text="Customer Home" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="633.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="Scan QR" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="693.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="707.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="Customer Details" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="822.0" layoutY="44.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label layoutX="835.0" layoutY="43.0" stylesheets="@../css/Text.css" text="Choose Resturants" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="962.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label disable="true" layoutX="975.0" layoutY="43.0" prefHeight="6.0" prefWidth="51.0" stylesheets="@../css/Text1.css" text="My Cart" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="1033.0" layoutY="43.0" stylesheets="@../css/Text1.css" text="-&gt;" />
+      <Label disable="true" layoutX="1046.0" layoutY="43.0" prefHeight="7.0" prefWidth="118.0" stylesheets="@../css/Text1.css" text="Payment Methods" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

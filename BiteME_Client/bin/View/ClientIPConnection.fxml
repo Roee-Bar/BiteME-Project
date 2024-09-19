@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientConnectionController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="398.0" style="-fx-background-color: #343434;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="513.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Sexy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="496.0" layoutY="69.0" prefHeight="40.0" prefWidth="190.0" text="Welcome To" textFill="#343434">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="224.0" prefHeight="40.0" prefWidth="94.0" text="Client :" textFill="#343434">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="464.0" layoutY="285.0" prefHeight="50.0" prefWidth="71.0" text="IP" textFill="#343434">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ip_txt" layoutX="571.0" layoutY="297.0" />
+      <Button fx:id="connect_btn" layoutX="525.0" layoutY="365.0" mnemonicParsing="false" onAction="#connect" prefHeight="66.0" prefWidth="177.0" style="-fx-background-color: #343434; -fx-background-radius: 100;" text="Connect" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

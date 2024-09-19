@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="616.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrdersDetailsController">
+   <children>
+      <ImageView fx:id="image" fitHeight="735.0" fitWidth="622.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sub.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="692.0" fitWidth="616.0">
+         <image>
+            <Image url="@../Images/A.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="411.0" layoutX="119.0" layoutY="336.0" rotate="90.0">
+         <image>
+            <Image url="@../Images/pngwing.com%20(5).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackButton" layoutX="82.0" layoutY="609.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="41.0" prefWidth="229.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+               <input>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.6431372761726379" blue="0.16862745583057404" />
+                     </color>
+                  </DropShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="ConfirmButton" layoutX="318.0" layoutY="609.0" mnemonicParsing="false" onAction="#ConfirmButtonAction" prefHeight="41.0" prefWidth="229.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Confirm The order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+               <input>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.6431372761726379" blue="0.16862745583057404" />
+                     </color>
+                  </DropShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fx:id="Orderdetailstxt" fill="#79a42b" layoutX="207.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Details" textAlignment="CENTER" wrappingWidth="221.3671875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="resturantnametxt" fill="#79a42b" layoutX="40.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resturant Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="resturantfield" fill="WHITE" layoutX="189.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="135.2412109375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="reqdatetxt" fill="#79a42b" layoutX="40.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="deleiverytxt" fill="#79a42b" layoutX="40.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deleivery Service:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalpricetxt" fill="#79a42b" layoutX="40.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="addresstxt" fill="#79a42b" layoutX="42.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalmesstxt" fill="WHITE" layoutX="41.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(*Including shipping)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="Citytxt" fill="#79a42b" layoutX="83.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="streettxt" fill="#79a42b" layoutX="87.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="HouseNumbertxt" fill="#79a42b" layoutX="87.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House Number:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="requesteddatefield" fill="WHITE" layoutX="195.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.90380859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="delevfield" fill="WHITE" layoutX="194.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.57177734375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalpricefield" fill="WHITE" layoutX="141.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="60.40625">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="cityfield" fill="WHITE" layoutX="132.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="82.888671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="streetfield" fill="WHITE" layoutX="150.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="75.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="huosefiled" fill="WHITE" layoutX="245.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="68.54833984375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="credittxt" fill="#79a42b" layoutX="364.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card Number:" wrappingWidth="149.9130859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="empnametxt" fill="#79a42b" layoutX="364.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employer Name:" wrappingWidth="107.90380859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="empidtxt" fill="#79a42b" layoutX="365.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employer ID:" wrappingWidth="92.2412109375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="creditfield" fill="WHITE" layoutX="480.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="125.2412109375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="empnamefield" fill="WHITE" layoutX="481.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.90380859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="empidfield" fill="WHITE" layoutX="480.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.10888671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

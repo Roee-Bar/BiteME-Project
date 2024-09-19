@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1276.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewOrdersController">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="839.0" layoutX="368.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Layer%204.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="316.0" layoutY="692.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="130.0" stylesheets="@../css/ButtonStyle1.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fill="#79a42b" layoutX="685.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #79a42b;" text="Orders List" textAlignment="CENTER" wrappingWidth="195.587890625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="orders_table" layoutX="367.0" layoutY="341.0" prefHeight="234.0" prefWidth="839.0" style="-fx-border-color: #343434;" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="orderNum" prefWidth="159.0" text="Order number" />
+          <TableColumn fx:id="time" prefWidth="242.0" text="Requested Time" />
+            <TableColumn fx:id="Total" prefWidth="180.0" text="total price" />
+            <TableColumn fx:id="Status" prefWidth="255.0" text="status" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="328.0" fitWidth="252.0" layoutX="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Spaggati.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="231.0" fitWidth="241.0" layoutX="1058.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Pizza.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="286.0" style="-fx-background-color: #05071F;" stylesheets="@../css/Style1.css">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Home" prefHeight="42.0" prefWidth="259.0" text="Home">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#WaitingOrders" prefHeight="42.0" prefWidth="259.0" text="Waiting orders">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0">
+                     <image>
+                        <Image url="@../Images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#viewOrderList" prefHeight="42.0" prefWidth="259.0" text="Orders in progress">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0">
+                     <image>
+                        <Image url="@../Images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#menuSettings" prefHeight="42.0" prefWidth="259.0" text="Menu setting">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/kissclipart-testing-icon-png-clipart-software-testing-computer-51bced1cfa2da30a.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="42.0" prefWidth="259.0" text="Sign Out">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../Images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="pkgbtn" layoutX="662.0" layoutY="635.0" mnemonicParsing="false" onAction="#ViewOrder" prefHeight="38.0" prefWidth="241.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="View Order Package" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="keyword" layoutX="939.0" layoutY="304.0" prefHeight="26.0" prefWidth="188.0" promptText="keywords..." />
+      <Label layoutX="939.0" layoutY="278.0" prefHeight="18.0" prefWidth="52.0" text="Search" textFill="#79a42b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Readybutton" layoutX="939.0" layoutY="586.0" mnemonicParsing="false" onAction="#StatusUpdate" prefHeight="41.0" prefWidth="130.0" style="-fx-background-color: #79a42b; -fx-background-radius: 100;" text="Ready" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+               <color>
+                  <Color blue="0.16862745583057404" green="0.6431372761726379" red="0.4745098054409027" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
