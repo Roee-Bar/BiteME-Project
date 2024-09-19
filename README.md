@@ -89,4 +89,4 @@ BiteMe showcases our team's ability to develop a complex, scalable, and user-fri
 
 ---
 
-For more information or to discuss this project further, please feel free to contact the development team.
+For more information or to discuss this project further, please feel free to contact me.
