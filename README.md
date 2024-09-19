@@ -1,7 +1,7 @@
 # BiteMe - Restaurant Management System
 
 ## Project Overview
-BiteMe is a comprehensive restaurant management system developed as part of the "Engineering Methods for Software Systems Development" course. This robust system facilitates food ordering, delivery management, and business analytics for a multi-branch restaurant chain.
+BiteMe is a comprehensive restaurant management system developed in the "Engineering Methods for Software Systems Development" course. This robust system facilitates food ordering, delivery management, and business analytics for a multi-branch restaurant chain.
 
 ### Key Features
 - User authentication and role-based access control
@@ -18,7 +18,7 @@ BiteMe is a comprehensive restaurant management system developed as part of the 
 - OCSF client-server framework
 
 ## Team Achievement
-Developed by a team of 5 students, this project received a final grade of 97, demonstrating exceptional quality and adherence to software engineering principles.
+Developed by a team of 5 students, this project received a final grade of 98, demonstrating exceptional quality and adherence to software engineering principles.
 
 ## System Architecture
 BiteMe follows a client-server architecture, ensuring scalability and efficient data management:
