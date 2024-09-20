@@ -58,7 +58,6 @@ BiteMe follows a client-server architecture, ensuring scalability and efficient 
 
 ### Security
 - Encrypted communication between client and server
-- Secure handling of user data and payment information
 - Prepared statements via JDBC to prevent SQL injection attacks
 
 ### Database Efficiency
