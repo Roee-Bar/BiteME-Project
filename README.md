@@ -19,7 +19,7 @@ BiteMe is a comprehensive restaurant management system developed in the "Enginee
 - OCSF client-server framework
 
 ## Team Achievement
-Developed by a team of 5 students, this project received a final grade of 98, demonstrating exceptional quality and adherence to software engineering principles.
+Developed by a team of 6 students, this project received a final grade of 98, demonstrating exceptional quality and adherence to software engineering principles.
 
 ## System Architecture
 BiteMe follows a client-server architecture, ensuring scalability and efficient data management:
